@@ -4,7 +4,7 @@ const SECONDHAND = document.querySelector("#second");
 
 let minPosition = 120;
 let secPosition = 10;
-let hrPososition = 253;
+let hrPosition = 253;
 
 var date = new Date();
 console.log(date);
