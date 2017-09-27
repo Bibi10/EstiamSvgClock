@@ -2,16 +2,16 @@ const HOURHAND   = document.querySelector("#hour");
 const MINUTEHAND = document.querySelector("#minute");
 const SECONDHAND = document.querySelector("#second");
 
-let minPosition = 120;
-let secPosition = 10;
-let hrPosition = 253;
+let minPosition = (hr*360/60)+(sec*(360/60/60));
+let secPosition = (sec*360/60);
+let hrPosition = (hr*360/12)+(min*(360/60)/12);
 
 var date = new Date();
 console.log(date);
 let hr  = date.getHours();
 let sec = date.getSeconds();
-let min = date.getMinutes;
-console.log(hr +" "+ min);
+let min = date.getMinutes();
+console.log(sec);
 
 
 
